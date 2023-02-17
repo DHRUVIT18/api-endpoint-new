@@ -22,8 +22,8 @@ app.get('/:userID', async(req, res) => {
   //getting employee id from salesforce
   // {!SFDC_Employee__c.EMP_ID__c}
   let data={
-    "username":`${process.env.A}`,
-    "password":`${process.env.B}`
+    "username":`${process.env.vettel}`,
+    "password":`${process.env.racing}`
   }
   
     let token =await axios({
