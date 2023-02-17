@@ -33,7 +33,6 @@ app.get('/:userID', async(req, res) => {
       });
     token=await token.data
     token=token.authToken
-
     
     const config = {
         headers: { Authorization: `Bearer ${token}` },
