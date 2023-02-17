@@ -1,6 +1,5 @@
 {
-    "version": 2,
-    "name": "api-backend",
+    "version": 2,   
     "builds": [
        { "src": "app.js", "use": "@vercel/node" }
     ],
