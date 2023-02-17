@@ -21,15 +21,15 @@ app.get('/:userID', async(req, res) => {
 
   //getting employee id from salesforce
   // {!SFDC_Employee__c.EMP_ID__c}
-
+  let data={
+    "username":`${process.env.A}`,
+    "password":`${process.env.B}`
+  }
   
     let token =await axios({
         method: 'post',
         url: 'https://iconnect.bcssys.com/iconnect/api/v1/sessions',
-        data:{
-          "username":`${process.env.A}`,
-          "password":`${process.env.B}`
-        }
+        data
       });
     token=await token.data
     token=token.authToken
